@@ -6,5 +6,6 @@
 public class HolyGrail {
     public static void main(String[] args) {
         System.out.println("Testing push");
+        System.out.println("Hi");
     }
 }
