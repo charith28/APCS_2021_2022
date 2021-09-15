@@ -6,6 +6,10 @@ import java.util.Scanner;
  * @author 23fernando
  */
 public class HolyGrail {
+    /**
+     * main entry point for class HolyGrail
+     * @param args - args if needed
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("* A chat with the bridge keeper *");
@@ -21,7 +25,5 @@ public class HolyGrail {
         System.out.println("Your quest is: " + quest);
         System.out.println("Your favorite color is: " + color);
         System.out.println("* end of program *");
-
-
     }
 }
