@@ -9,6 +9,7 @@ public class HolyGrail {
     /**
      * main entry point for class HolyGrail
      * @param args - args if needed
+     *
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

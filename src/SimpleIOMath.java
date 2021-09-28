@@ -23,6 +23,8 @@ public class SimpleIOMath {
      *promptUser initiates the scanner and asks the user for the initial information
      */
     public void promptUser(){
+        System.out.println("* Sit yourself down, take a seat *");
+        System.out.println("* All you gotta do is repeat after me *");
         Scanner input = new Scanner(System.in);
         System.out.print("Question 1: What is your name? ");
         name = input.nextLine();
@@ -57,8 +59,6 @@ public class SimpleIOMath {
      * @param args - if needed
      */
     public static void main(String[] args) {
-        System.out.println("* Sit yourself down, take a seat *");
-        System.out.println("* All you gotta do is repeat after me *");
         SimpleIOMath obj=new SimpleIOMath();
         obj.promptUser();
         obj.printInfo();
