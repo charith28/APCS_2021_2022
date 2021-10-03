@@ -98,26 +98,30 @@ public class RomanToDecimal {
      * @param args - contain a test set Roman Numerals and invalid inputs.
      */
     public static void main(String[] args) {
-        Scanner user =  new Scanner(System.in);
+        Scanner user = new Scanner(System.in);
         RomanToDecimal obj = new RomanToDecimal();
 
-        for (String temp: args){
+        for (String temp : args) {
             int val = romanToDecimal(temp);
-            if(val == -1){
+            if (val == -1) {
                 System.out.println("Input: " + temp + " => output: invalid");
-            }
-            else{
+            } else {
                 System.out.println("Input: " + temp + " => output: " + val);
             }
         }
-        System.out.print("Input: ");
+        System.out.println("Type a roman numeral for a conversion. Type STOP to terminate the program.");
         String uinp = user.nextLine();
         int udec = romanToDecimal(uinp);
-        if(udec == -1){
-            System.out.print("=> output: invalid");
-        }
-        else{
-            System.out.print("=> output: " + udec);
+        while(!uinp.equalsIgnoreCase("stop")) {
+            if (uinp.equalsIgnoreCase("stop")) {
+                System.out.print("Thanks!");
+            }else if(udec == -1){
+                System.out.print("Input: "+ uinp.toUpperCase() + " => output: invalid");
+                uinp = user.nextLine();
+            } else {
+                System.out.print("Input: "+ uinp.toUpperCase() + " => output: " + udec);
+                uinp = user.nextLine();
+            }
         }
     }
 }
