@@ -1,3 +1,7 @@
+package RomanToDecimalPack;
+
+import RomanToDecimalPack.RomanToDecimal;
+
 import static org.junit.Assert.*;
 public class testRomanToDecimalTest {
 
