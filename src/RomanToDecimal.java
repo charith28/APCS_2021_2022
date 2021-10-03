@@ -1,5 +1,3 @@
-package RomanToDecimalPack;
-
 import java.util.Scanner;
 /**
  * RomanToDecimal is a program which converts both user and args input of Roman Numerals into Integer form, while handling invalid and incorrect input.
