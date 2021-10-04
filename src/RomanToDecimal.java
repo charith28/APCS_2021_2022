@@ -111,8 +111,8 @@ public class RomanToDecimal {
         }
         System.out.println("Type a roman numeral for a conversion. Type STOP to terminate the program.");
         String uinp = user.nextLine();
-        int udec = romanToDecimal(uinp);
         while(!uinp.equalsIgnoreCase("stop")) {
+            int udec = romanToDecimal(uinp);
             if (uinp.equalsIgnoreCase("stop")) {
                 System.out.print("Thanks!");
             }else if(udec == -1){
