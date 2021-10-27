@@ -1,7 +1,14 @@
 import static org.junit.Assert.*;
-public class testRomanToDecimalTest {
+
+/**
+ * A junit test for various types of correct and incorrect inputs.
+ */
+public class RomanToDecimalTest {
 
     @org.junit.Test
+    /**
+     * 18 assertEquals and 2 assertNotEquals statements that have inputs which test the validity of the code.
+     */
     public void romanToDecimal() {
         assertEquals(RomanToDecimal.romanToDecimal("XI"),11);
         assertEquals(RomanToDecimal.romanToDecimal("xx"),20);
