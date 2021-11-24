@@ -36,7 +36,7 @@ public class BaseConverter {
     // Convert a base-10 int to a String number of base toBase.
 
     /**
-     *
+     *Takes base 10 integer and converts into base of user's choice
      * @param num a base 10 integer which is being converted to another base
      * @param toBase - The base to which num is being converted to
      * @return - The converted value of num in base toBase.
