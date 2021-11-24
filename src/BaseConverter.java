@@ -33,8 +33,6 @@ public class BaseConverter {
         }
         return sum;
     }
-    // Convert a base-10 int to a String number of base toBase.
-
     /**
      *Takes base 10 integer and converts into base of user's choice
      * @param num a base 10 integer which is being converted to another base
