@@ -1,6 +1,16 @@
 import java.util.ArrayList;
+import java.util.*;
+
+
 
 public class Chapter11 {
+    public static ArrayList<String> Reverse(ArrayList<String> x){
+        ArrayList<String> rev = new ArrayList<>();
+        for (int i = x.size(); i > 0 ; i--) {
+            rev.add(x.get(i-1).toString());
+        }
+        return rev;
+    }
     public static void main(String[] args) {
         ArrayList list1 = new ArrayList();
         ArrayList list2 = new ArrayList();
@@ -10,5 +20,14 @@ public class Chapter11 {
                     list1.remove(i);
                 }
             }
+        ArrayList<String> temp = new ArrayList<String>();
+
+        temp.add("b");
+        temp.add("a");
+        temp.add("b");
+        temp.add("e");
+
+        System.out.println(Reverse(temp));
+
     }
 }
