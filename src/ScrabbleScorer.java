@@ -41,6 +41,7 @@ public class ScrabbleScorer {
         Collections.sort(dictionary);
     }
 
+
     /**
      * Checks in the dictionary arrayList if the provided word is valid
      * @param word - a word which is checked for in the dictionary
@@ -72,6 +73,7 @@ public class ScrabbleScorer {
         System.out.println("* Welcome to the Scrabble Word Scorer app *");
         String userWord;
         Scanner userIn = new Scanner(System.in);
+
         try{
             while(true){
                 System.out.print("Enter a word to score or 0 to quit: ");
@@ -92,6 +94,4 @@ public class ScrabbleScorer {
             e.printStackTrace();
         }
     }
-
-
 }
