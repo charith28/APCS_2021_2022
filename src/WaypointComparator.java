@@ -1,23 +1,47 @@
 import java.util.Comparator;
 
+/**
+ * @version April 29 2022
+ * @author 23fernando
+ * Comparator class for waypoints
+ */
 public class WaypointComparator implements Comparator<Waypoint> {
     private int category;
     private boolean asc;
 
+    /**
+     * parameterized constructor for a waypoint comparator
+     * @param c - category of comparing
+     * @param a - boolean representing ascending or descending order of comparing
+     */
     public WaypointComparator(int c, boolean a){
         category = c;
         asc = a;
     }
 
+    /**
+     * parameterized constructor for a waypoint comparator
+     * @param c - category of comparing
+     */
     public WaypointComparator(int c){
         category = c;
         asc= true;
     }
 
+    /**
+     * unparameterized constructor of the waypoint comparator
+     */
     public WaypointComparator(){
         category = 4;
         asc = true;
     }
+
+    /**
+     * comparer method that takes two waypoints and returns their difference in a certain category
+     * @param one - the first waypoint to be compared
+     * @param two - the second waypoint to be compared
+     * @return - the difference between two waypoints
+     */
     public int compare(Waypoint one, Waypoint two){
         int diff = 0;
         if(category ==1){
